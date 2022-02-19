@@ -61,6 +61,8 @@ resource "aws_eip" "nat_gw" {
 
 resource "aws_nat_gateway" "default" {
   subnet_id = aws_subnet.public["us-east-1a"].id
+
+  allocation_id = aws_eip.nat_gw.allocation_id
 }
 
 
