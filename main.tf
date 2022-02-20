@@ -3,7 +3,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Name = "private-link-cross-region"
+      Name = "tf-sagemaker-sandbox"
     }
   }
 }
